@@ -9,3 +9,5 @@ edition = "2021"
 vfscore = { path = "../../crates/vfscore" }
 log = "0.4"
 sync = { path = "../sync" }
+frame_allocator = { path = "../frame_allocator" }
+arch = { path = "../../arch" }
