@@ -6,8 +6,8 @@ extern crate alloc;
 use core::cmp::{self, min};
 
 use alloc::{string::String, sync::Arc, vec::Vec};
-use polyhal::PAGE_SIZE;
 use frame_allocator::{ceil_div, frame_alloc, FrameTracker};
+use polyhal::pagetable::PAGE_SIZE;
 use sync::Mutex;
 use vfscore::{
     DirEntry, FileSystem, FileType, INodeInterface, Metadata, Stat, StatMode, TimeSpec, VfsError,
